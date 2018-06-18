@@ -1,0 +1,28 @@
+@charset "utf-8";
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:top}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1.5;-webkit-text-size-adjust:none;/* 아이폰 사파리 가로모드에서 텍스트확대방지 */}
+ol,ul{list-style:none}
+
+/* 인용구에 사용하는 태그이며 우리나라에선 잘안씀(""처리) */
+blockquote,q{quotes:'none'}
+
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:'none'}
+table{border-collapse:collapse;/* 칸들의 선합치기 */border-spacing:0;/* 칸사이 간격없애기 */}
+a{text-decoration:none}
+
+/* button초기화는 필요한내용만 따로 해준다 */
+button{margin:0;padding:0;cursor:pointer}
+
+/* form 제목인 legend태그 위쪽으로 이동시켜 보이지않게 */
+legend,caption{position:absolute;top:-9999px;left:0}
+
+/*섹션제목을 보이지않게할때 사용*/
+.hid{overflow:hidden;display:block;visibility:hidden;position:absolute;width:1px;height:1px;font-size:1px;white-space:nowrap;}
+
+/*스킵네비게이션*/
+#skipNav { position:relative;}
+#skipNav a {position:absolute; left:0; top:0; background:#333; color:#fff; text-align:center; z-index:9999; width:100%; font-size:12px; line-height:30px;}
+#skipNav a:focus,#skipNav a:active,#skipNav a:hover {top:0;}

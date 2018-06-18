@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;line-height:1;}
+
+a:link, a:visited, a:active{ text-decoration:none;color:#FFF;font-weight:bold;text-transform:uppercase;font-size:1.1em;}
+
+body{background:url(../img/ck2.jpg) no-repeat; height:100%;}
+#wrap{width:100%; height:150px; margin:0 auto; background-color:;}
+header hgroup{width:100%;height:100%; color:#666;}
+header hgroup .memu{background:#; width:500px; height:40px; margin:0 auto;}
+header hgroup .memu ul{list-style:none; display:block;}
+header hgroup .memu ul:after{content:""; display:block; clear:both; visibility:hidden;}
+header hgroup .memu ul li{float:left;display:block;padding:0;}
+header hgroup .memu ul li a {transition:color .25s;dispaly:block; position:relative; color:#fff; margin:0 auto; text-decoration:none; padding:15px 25px;font-family:"돋음", sans-serif;font-weight:bold; font-size:17px;}
+header hgroup .memu ul li a:hover{color:#f0505;}
+header hgroup .memu ul li a:hover:before{width:100%}
+header hgroup .memu ul li a:before{content:""; display:block; position:absolute;left:0;bottom:0;height:3px;width:0;background:#f00505;}
+header hgroup .logo {width:100px; height:100px; margin:0 auto;}
+
+section h1{width:100%; height:auto; position: relative; margin:0 auto;font-size:40px; color:#fff;}
+
+section{  width:100%; height:100%; position:relative; margin:0 auto;}
+
+.video { position: relative;padding-bottom: 56.25%;height: 0;overflow: hidden;margin-bottom: 4em;}
+.video iframe, .video object, .video embed { position: absolute;top: 0;left: 0;width: 100%; height: 100%;}
+.wrapper {background-color: #ddd; max-width:73%; margin:0 auto; padding: 0 15px 0; position:relative; }
+h1 {font-size: 1.5em;}
+p {font-size: 1em;}
+.resize {text-align: right;font-size: .75em;}
+div.ytp-cued-thumbnail-overlay-image{width:auto; height:auto;}
+
+.w3-display-left{top:50%; position:absolute; width:21px; height:21px; background-color:#CFF; float:left;margin-bottom:auto;}
+.w3-display-right{ right:1.23%;top:50%;position:absolute;width:21px; height:21px;  background-color:#CFF; float:right; margin-bottom:auto;}
+
+footer{ width:100%; height:auto; border-top:1px solid #e9e9e9; margin:20px auto 0 auto; background:#666;}
+footer p{ text-align:center; text-transform:uppercase; padding-top:20px; font-size:0.85em;}
+footer p span{ text-transform:lowercase;}
+
+.youtubeWrap {position: relative;width: 100%;padding-bottom: 56.25%;}
+.youtubeWrap iframe {position: absolute;width: 100%;height: 100%;}
+
+.vi{width:100%; height:80px;}
+.h2{font-size:40px; color:#fff;position:absolute;left:14.33%;}
+
+@media only screen and (min-width : 300px) and (max-width : 1049px) {
+   body{background:#222;}
+
+  .vi{width:100%; height:80px;}
+  .h2{font-size:40px; color:#fff;position:absolute;left:39.5%;}
+
+  .w3-display-right{ right:4%;top:50%;position:absolute;width:21px; height:21px;  background-color:#CFF; float:right; margin-bottom:auto;}
+
+  footer{position:absolute;  bottom:0;  width:100%;  height:auto;    border-top:1px solid #e9e9e9; margin:20px auto 0 auto; background:#666;}
+  footer p{ text-align:center; text-transform:uppercase; padding-top:20px; font-size:0.85em;}
+  footer p span{ text-transform:lowercase;}
+  footer p .span1 {display:none;}
+
+
+}
